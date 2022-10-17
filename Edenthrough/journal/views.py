@@ -9,5 +9,5 @@ def home(request):
 
 
 def register(request):
-    return HttpResponse("Welcome to Registration Page.")
+    return render(request, 'register.html')
 
