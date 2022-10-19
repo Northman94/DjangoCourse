@@ -5,7 +5,9 @@ from django.http import HttpResponse
 # Creating a View:
 
 def home(request):
-    return HttpResponse("Home Page.")
+    #return HttpResponse("Home Page.")
+
+    return render(request, 'index.html')
 
 
 def register(request):
