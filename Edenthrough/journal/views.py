@@ -7,7 +7,11 @@ from django.http import HttpResponse
 def home(request):
     #return HttpResponse("Home Page.")
 
-    return render(request, 'index.html')
+    first_name = "Luke Paul"
+
+    context = {'name':first_name}
+
+    return render(request, 'index.html', context)
 
 
 def register(request):
