@@ -7,7 +7,7 @@ from django.http import HttpResponse
 def home(request):
     #return HttpResponse("Home Page.")
 
-    first_name = "Luke Paul"
+    first_name = "John"
 
     context = {'name':first_name}
 

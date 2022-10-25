@@ -8,12 +8,3 @@ urlpatterns = [
     path("register/", views.register),
 ]
 
-
-
-
-
-
-
-
-
-
