@@ -1,20 +1,23 @@
 
 {% include 'base.html' %}
 
-<h1> Home Page </h1>
-
+<h3> Home Page </h3>
 
 <br>
 
 
-<!--  <h1> {{ name }} <h1>  -->
+{% for client in clients %}
 
-{% if name == 'John' %}
+    <p> {{client.id}} </p>
 
-<p> Welcome! </p>
+    <br>
 
-{% else %}
+    <p> {{client.name}} </p>
 
-<h1> Access Denied ! </h1>
+    <br>
 
-{% endif %}
+    <p> {{client.profession}} </p>
+
+    <br>
+
+{% endfor %}
