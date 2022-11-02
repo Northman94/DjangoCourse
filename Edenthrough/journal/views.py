@@ -20,7 +20,6 @@ clientList = [
 
 
 
-
 def register(request):
 
     return render(request, 'register.html')
