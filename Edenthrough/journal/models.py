@@ -10,3 +10,13 @@ class Task(models.Model):
 
 
 
+class Review(models.Model):
+
+    reviewer_name = models.CharField(max_length = 65)
+    review_title = models.CharField(max_length = 100)
+
+
+    task = models.ForeignKey(Task, on_delete = models.CASCADE)
+
+
+
