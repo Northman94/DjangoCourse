@@ -6,18 +6,4 @@
 <br>
 
 
-{% for client in clients %}
-
-    <p> {{client.id}} </p>
-
-    <br>
-
-    <p> {{client.name}} </p>
-
-    <br>
-
-    <p> {{client.profession}} </p>
-
-    <br>
-
-{% endfor %}
+<a href="{% url 'task' %}"> Go to your Tasks. </a>
