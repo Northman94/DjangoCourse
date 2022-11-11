@@ -14,7 +14,7 @@ def task(request):
 
     # - Return All the records from Task database table/model
     # queryAllData = Task.objects.all()
-    queryData = Task.objects.get(title="Complete Spreadsheet")
+    queryData = Task.objects.get(id=3)
 
     context = {'task': queryData}
 
