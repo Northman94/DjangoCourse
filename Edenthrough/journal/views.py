@@ -13,9 +13,10 @@ def home(request):
 def task(request):
 
     # - Return All the records from Task database table/model
-    queryAllData = Task.objects.all()
+    # queryAllData = Task.objects.all()
+    queryData = Task.objects.get(title="Complete Spreadsheet")
 
-    context = {'tasks': queryAllData}
+    context = {'task': queryData}
 
 
     return render(request, 'task.html', context)
